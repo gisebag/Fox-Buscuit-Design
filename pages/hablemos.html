@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gb - hablemos</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!----------- Barra de navegación ------------->
+
+    <header>
+        <p class="logo"><a href="../index.html">gisele <span class="roll">bagialemani</span></a></p>
+            
+    <nav class="barra">
+            <ul>
+                <li class="listas"><a class="linkListas" href="../index.html">Home</a></li>
+                <li class="listas"><a class="linkListas" href="sobreMi.html">Sobre Mi</a></li>
+                <li class="listas"><a class="linkListas" href="servicios.html">Servicios</a></li>
+                <li class="listas"><a class="linkListas" href="miportfolio.html">Mi Portfolio</a>
+                    <ul class="listadoSecundario">
+                        <li class="subItemNavegacion">
+                            <a class="linkListas2" href="disenoGrafico.html">Diseño Gráfico</a></li>
+                        <li class="subItemNavegacion">
+                            <a class="linkListas2" href="fotografia.html">Fotografía</a></li>
+                        <li class="subItemNavegacion">
+                            <a class="linkListas2" href="disenoWeb.html">Diseño Web</a></li>
+                    </ul>
+                
+                </li>
+                <li class="listas"><a class="linkListas" href="hablemos.html">Hablemos</a></li>
+            </ul>
+    </nav>
+    </header>
+
+<!---------------------- SECCIÓN HABLEMOS----------------------->
+
+<section class="hablemos1">
+    <h2 class="tituloHablemos1"> Hablemos</h2>
+    <div class="cuadroColorHablemos1"></div>
+    <h3 class="tituloHablemos2">Si tenés un proyecto y querés que lo veamos juntos escribime</h3>
+
+    <h4 class="textoHablemos1">Completá el siguiente formulario y en la brevedad me pondré en contacto.</h4> 
+
+    <form class="formularioHablemos" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+        <label for="Nombre y apellido">Nombre y apellido*</label><br>
+        <input type="text" placeholder="Escribe tu nombre y apellido"><br>
+        <label for="Correo">Correo*</label><br>
+        <input type="mail" name="correo" placeholder="Escribe tu correo"><br>
+        <label for="">Comentarios</label><br>
+        <textarea name="Comentarios" id="Comentarios" cols="40" rows="15" placeholder="Escribe tu comentario"></textarea><br>
+        <input class="clickHablemos" type="Submit" value="Enviar">
+        <input class="clickHablemos" type="Reset" value="Borrar">
+    </form>
+
+</section>
+
+
+<!-- /* -----------------PIE de PAGINA------------------- */ -->
+
+<footer class="piePagina">
+    <div class="contieneLogoChico">
+        <p class="logoPie">gisele <span class="roll">bagialemani</span></p>
+    </div>
+
+    <div class="insta">
+        <a class="logoInsta" href="https://www.instagram.com/foxbiscuitdesign/">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    </div>
+    
+    <p class="copy">Copyright &copy; 2022 Gisele Bagialemani</p>
+
+</footer>
+</body>
+</html>
