@@ -7,145 +7,36 @@
 
 /* ----------------BARRA NAVEGACION----------------- */
 
-/* 1ro. declaramos la medida de la barra de navegación */
-header{
-    background-color:rgb(255, 241, 241);
-    height: 80px;
+
+.header{
+    margin: auto !important;
     width: 100%;
-
-}
-header p a{
-    text-decoration: none;
-    list-style: none;
-    color: orangered;
 }
 
-/* menu hamburgesa */
-
-#menuBarras{
-    display: none;
-
+.navbar{
+    background-color: coral;
 }
 
-header label img{
-    display: none;
-    width: 40px;
-    height: 40px;
-    /* background-color: white; */
-    padding: 5px;
-
+.cambioPosicion{
+    flex-grow: 0;
 }
 
-
-header label:hover{
-    cursor: pointer;
-    background-color: pink;
+.nav-item{
+    padding: 5px 20px;
+    
 }
 
-/* fin menu hamburg */
-
-.logo{
-    font-size: 30px;
-    color: orangered;
-    font-family: Arial, Helvetica, sans-serif;
-    /* text-transform: capitalize; */
-    float: left;
-    padding: 20px 0;
-    margin-left: 30px;
-
+.nav-link{
+    color: snow !important;
 }
-
-
 .roll{
     color: brown;
     font-weight: bold;
 
 }
 
-header ul li{
-    display: inline-block;
-
-}
-
-header ul li{
-    font-size: 24px;
-    margin-right: 20px;
-    padding: 25px 0;
-}
-
-.linkListas{
-    text-decoration: none;
-    list-style: none;
-    color:brown;
-    /* font-size: bold; */
-}
-.barra{
-    float: right;
-}
-
-.linkListas:hover{
-    background-color: orangered;
-    padding: 5px;
-    border-radius: 3px;
-    color: white;
-}
-.contieneImagen{
-    width: 200px;
-    height: 300px;
-    /* background-color: brown; */
-    border: solid 5px chocolate;
-    /* opacity: 0.75; esta propiedad lo hereda el contenedor que esta adentro de éste, OJO */
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    left: 200px;
-    top: 100px;
-}
-
-.imagen{
-    width: 200px;
-    height: 300px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: solid 8px lightpink;
 
 
-}
-/* submenú */
-
-ul ul{
-    position: absolute;
-    display: none;
-}
-
-.subItemNavegacion{
-    display: block;
-    background-color: rgb(255, 241, 241);
-    width: 200px;
-    height: 30px;
-    padding: 25px 0;
-    text-align: center;
-    align-items: center;
-}
-
-ul li:hover ul{
-    display: block;
-}
-
-.linkListas2{
-    text-decoration: none;
-    list-style: none;
-    color: brown;
-}
-.linkListas2:hover{
-    color: white;
-}
-
-.subItemNavegacion:hover{
-    background-color: orangered;
-    transition: 0.5s;
-
-}
 
 /* ---------------------------SECCIÓN INICIO--------------------------------- */
 .body{
@@ -668,88 +559,90 @@ ul li:hover ul{
 
 /* <!---------------------- SECCIÓN HABLEMOS-----------------------> */
 
-.hablemos1{
+.secHablemos{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(../img/fondo-contacto.jpg);
     background-size: cover;
-    text-align: center;
+    margin-bottom: 0;
+
 }
 
 .tituloHablemos1{
-    color: orangered;
-    width: 170px;
+    padding: 10px 0;
     /* background-color: aquamarine; */
-    position: relative;
-    top:50px;
-    left: 650px;
-    border: solid 2px brown;
     text-align: center;
-    padding: 5px;
-    z-index: 2;
+    color: orangered;
+    
 }
 
-.cuadroColorHablemos1{
-    width: 170px;
-    height: 50px;
-    background-color: rgb(240, 197, 148);
-    position: relative;
-    top:-15px;
-    left: 630px;
-    z-index: 1;
+.formulario{
+    /* background-color: #f0aca9; */
+    border-radius: 5px;
+    margin: 20px 0;
+    
 }
 
-.tituloHablemos2{
-    background-color: orangered;
-    width: 450px;
-    height: 100px;
-    color: white;
-    position: relative;
-    left: 850px;
-    top: 150px;
-    padding-top: 50px;
-}
-.textoHablemos1{
-    background-color: orangered;
-    width: 450px;
-    height: 80px;
-    color: white;
-    position: relative;
-    left: 850px;
-    top: 200px;
-    padding-top: 40px;
+
+
+.contorno{
+    padding: 10px 5px;
 }
 
-.formularioHablemos{
-    /* background-color: aquamarine; */
-    width: 500px;
-    height: 400px;
-    border: solid 2px brown;
-    position: relative;
-    margin: 10px;
-    margin-left: 100px;
-    padding: 30px;
-    padding-top: 70px;
-    bottom: 250px;
-}
+
 
 label{
-    font-size: 20px;
+    font-size: 15px;
     color:orangered;
     font-weight: bold;
+    text-shadow: 0 0 5px whitesmoke;
 
+}
+
+
+.checkForm{
+    font-size: 15px;
+    color:orangered;
+    font-weight: bold;
+    text-shadow: 0 0 5px whitesmoke;
+    margin-bottom: 5px;
+}
+
+.form-select{
+    color: rgb(95, 108, 121);
+}
+.correo{
+    margin-top: 20px;
 }
 
 .clickHablemos{
     background-color:brown;
     color: white;
-    height: 30px;
-    width: 60px;
-    border-radius: 8px;
-    font-size: 16px;
+    margin: 5px 10px;
+    
+}
+
+.clickHablemos:hover{
+    background-color: #f6a38e;
 }
 
 
+.hablemos1{
+    margin-top: 150px;
+}
+
+.tituloHablemos2{
+    /* background-color: coral; */
+    color: brown;
+    padding: 10px 50px;
+    
+    
+}
+.textoHablemos1{
+    /* background-color: coral; */
+    color: brown;
+    padding: 10px 50px;
+}
 
 
 /* --------PIE de PAGINA---------- */
@@ -757,70 +650,24 @@ label{
 .piePagina{
     text-align: center;
     background-color:rgb(255, 241, 241);
-    height: 120px;
+    
     width: 100%;
 }
 
-/* .logoPie2{
-    background-color: aqua;
-    border: solid 2px brown;
-    width: 240px;
-    font-size: 24px;
+.contieneLogoChico{
+    padding: 5px 0;
+}
+
+.logoPieLink{
     color: orangered;
-    font-family: Arial, Helvetica, sans-serif;
-    /* text-transform: capitalize; */
-    /* padding: 10px;
-    text-align: center;
-    position: relative;
-    left: 625px;
+    text-decoration: none;
+}
 
-} */
-
-.logoPie2{
-    /* background-color: orangered; */
-    text-align: center;
-    padding: 5px;
+.logoPieLink:hover{
     color: orangered;
-    font-weight:100;
+    
+    transition: 0.5s;
 }
-
-.logoInsta{
-    font-size: 28px;
-    padding: 5px;
-    color: rgb(94, 24, 24);
-    font-weight:100;
-    padding: 10px 0;
-}
-
-/* .logoInsta{
-    /* background-color: aquamarine; */
-    /* position: relative;
-    left: 740px;
-    font-size: 28px;
-    color: brown;
-} */
-
-/* .insta{
-    width: 100%;
-    display:flex;
-    align-items:flex-end;
-}
-/* .logoInsta{
-
-
-    padding: 5px;
-    color: rgb(94, 24, 24);
-    font-weight:100;
-} */
-
-.copy{
-    background-color: coral;
-    text-align: center;
-    padding: 5px;
-    color: rgb(94, 24, 24);
-    font-weight:100;
-}
-
 .piePagina p{
     display: block;
     margin-block-start: 1em;
@@ -831,92 +678,48 @@ label{
 }
 
 
+.pieMenu li{
+    display: inline-block;
+    padding: 0;
+}
+
+.linea{
+    border-right: 1px solid brown;
+}
+
+.linkPie{
+    text-decoration: none ;
+    padding: 10px;
+    color: brown;
+}
+
+
+
+
+.logoInsta{
+    font-size: 28px;
+    padding: 5px;
+    color: rgb(94, 24, 24);
+    font-weight:100;
+    padding: 10px 0;
+}
+
+
+
+.copy{
+    background-color: coral;
+    text-align: center;
+    padding: 5px;
+    color: rgb(94, 24, 24);
+    font-weight:100;
+}
+
+
+
 /* medias queries */
 
 @media only screen and (min-width: 320px) and (max-width: 1023px){
 
-    /* ---- barra navegación----- */
-
-    body{
-        z-index: 2;
-    }
-    header{
-        height: 50px;
-        width: 100%;
-    }
-
-
-    header label img{
-        display: block;
-
-    }
-
-    header ul li{
-        font-size: 20px;
-        margin-right: 16px;
-        padding: 20px 0;
-    }
-
-
-    header ul li{
-        /* esta propiedad me permite hacer columna el nav */
-        display:block;
-        flex-direction: column;
-
-    }
-
-    .logo{
-        font-size: 20px;
-        color: orangered;
-        /* background-color: blueviolet; */
-        float: right;
-        position: relative;
-        top: -60px;
-        padding-right: 20px;
-    }
-
-    .barra{
-        position: absolute;
-        background: pink;
-        width: 100%;
-        height: 100vh;
-        margin-left: -100%;
-    }
-
-    .navMenu{
-
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #menuBarras:checked ~ .barra{
-        margin: 0;
-        z-index: 1;
-    }
-
-    ul ul{
-        display: block;
-        flex-direction: column;
-    }
-
-    .listas:hover{
-        background-color: orangered;
-        transition: 1s;
-    }
-
-    .listadoSecundario{
-        position: relative;
-        text-align: center;
-    }
-    .subItemNavegacion{
-        display: inline-block;
-        background-color: pink;
-        width: 100%;
-        height: 40px;
-        align-items: center;
-    }
-
-    /* fin barra navegación */
 
     /* -------Inicio----- */
     .inicio{
@@ -1024,15 +827,15 @@ label{
     .piePagina{
         display: block;
         align-items: center;
-        background-color:rgb(252, 196, 190);
-        height: 80px;
+        background-color:rgb(251, 219, 216);
+        
         width: 100%;
     }
 
     .contieneLogoChico{
         display: flex;
         flex-direction: column;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         justify-content:center
     }
 
@@ -1051,4 +854,21 @@ label{
 
 
 }
+
+@media only screen and (min-width: 320px) and (max-width: 575px){
+    
+    /* Sección HABLEMOS: ajustes */
+    .hablemos1{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    .cambioPosicion{
+        flex-grow: 1;
+    }
+}
+
+
 
