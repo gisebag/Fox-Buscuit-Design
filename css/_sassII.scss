@@ -1,0 +1,62 @@
+
+//inicio extend: page INDEX//
+
+.tituloPortada2{
+    width: 500px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.tituloPortada3{
+    @extend .tituloPortada2;
+    font-family: monospace;
+    
+}
+//fin extend//
+
+
+//inicio mapa: page SERVICIOS//
+$pruebas:(
+    //declaramos el mapa//
+    prueba1: tomato,
+    prueba2: orange,
+    prueba3: orangered
+
+    );
+
+    @each $size, $color in $pruebas {
+        .prueba-#{$size} {
+            background-color: $color;
+            width: 400px;
+            height: 450px;
+            margin: 40px 5px;
+        
+        }
+    }
+
+
+//fin mapa//
+
+
+//inicio mixin page: Diseño grafico//
+@mixin pruebaMix ($alto, $ancho) {
+    
+    height: $alto;
+    width: $ancho;
+    
+}
+
+
+.ilust{
+    
+    @include pruebaMix(400px ,300px );
+    border: 5px dashed orangered;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+//fin mixin//
+
+
+
