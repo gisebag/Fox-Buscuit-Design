@@ -151,13 +151,13 @@ $color-texto-footer-secundario:#D1E0DF;
 
 
 .icon{
-    color: whitesmoke;
+    color: $color-fondo;
     font-size: 50px;
     margin: 20px;
 
 }
 .icon:hover{
-    text-shadow: 0 0 5px brown;
+    text-shadow: 0 0 5px $color-nav;
 }
 
 
@@ -165,7 +165,7 @@ $color-texto-footer-secundario:#D1E0DF;
 .text3{
 
     /* background-color: rgba(228, 184, 190); */
-    color: orangered;
+    color: $color-texto-nav;
     text-align: justify;
 
 }
@@ -521,7 +521,7 @@ label{
 .logoInsta{
     font-size: 28px;
     padding: 5px;
-    color: $color-texto-footer;
+    color: $color-texto-footer-secundario !important;
     font-weight:100;
     padding: 10px 0;
 }
@@ -541,8 +541,17 @@ label{
 @media only screen and (min-width: 320px) and (max-width: 1023px){
 
     /* -------Inicio----- */
+    .imgvector{
+        display: block;
+    }
 
         /* fin inicio */
+
+    /* -------sobre mi----- */
+
+    .remote{
+        width: 350px;
+    }
 
     /* servicios */
 
@@ -579,25 +588,21 @@ label{
     }
 
     .tituloFotografia1{
-        color: orangered;
-        /* background-color: aquamarine; */
-        /* border: solid 2px brown; */
+        color: $color-nav;
         position: relative;
         top: 10px;
         height: 40px;
         padding: 5px;
-        z-index: 2;
+        
     }
 
     .cuadrosFotografia{
-
         display: grid;
-        /* border: 3px solid orangered; */
         grid-template-columns: 1fr ;
         grid-template-rows:  300px;
-        /* grid-gap: 1% 3%; */
         justify-items: center;
         align-items: center;
+        
     }
 
     /* -------Footer------ */
@@ -613,7 +618,7 @@ label{
         font-size: 80px;
         font-weight: bold;
         text-align: left;
-        text-shadow: 0 0 5px brown;
+        text-shadow: 0 0 5px $color-nav;
     }
 
     .tituloPortada2{
@@ -637,6 +642,10 @@ label{
     /* Sección HABLEMOS: ajustes */
     .hablemos1{
         margin-top: 30px;
+        
+    }
+    .tituloHablemos2{
+        text-shadow: 0 0 5px $color-nav;
     }
 
 }

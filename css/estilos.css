@@ -195,18 +195,18 @@
 }
 
 .icon {
-  color: whitesmoke;
+  color: #D1E0DF;
   font-size: 50px;
   margin: 20px;
 }
 
 .icon:hover {
-  text-shadow: 0 0 5px brown;
+  text-shadow: 0 0 5px #242040;
 }
 
 .text3 {
   /* background-color: rgba(228, 184, 190); */
-  color: orangered;
+  color: #54bf98;
   text-align: justify;
 }
 
@@ -560,7 +560,7 @@ label {
 .logoInsta {
   font-size: 28px;
   padding: 5px;
-  color: #54bf98;
+  color: #D1E0DF !important;
   font-weight: 100;
   padding: 10px 0;
 }
@@ -576,7 +576,14 @@ label {
 /* medias queries */
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   /* -------Inicio----- */
+  .imgvector {
+    display: block;
+  }
   /* fin inicio */
+  /* -------sobre mi----- */
+  .remote {
+    width: 350px;
+  }
   /* servicios */
   .contieneServicios {
     display: -webkit-box;
@@ -618,24 +625,19 @@ label {
     width: 100%;
   }
   .tituloFotografia1 {
-    color: orangered;
-    /* background-color: aquamarine; */
-    /* border: solid 2px brown; */
+    color: #242040;
     position: relative;
     top: 10px;
     height: 40px;
     padding: 5px;
-    z-index: 2;
   }
   .cuadrosFotografia {
     display: -ms-grid;
     display: grid;
-    /* border: 3px solid orangered; */
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 300px;
         grid-template-rows: 300px;
-    /* grid-gap: 1% 3%; */
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -651,7 +653,7 @@ label {
     font-size: 80px;
     font-weight: bold;
     text-align: left;
-    text-shadow: 0 0 5px brown;
+    text-shadow: 0 0 5px #242040;
   }
   .tituloPortada2, .tituloPortada3 {
     width: 300px;
@@ -670,6 +672,9 @@ label {
   /* Sección HABLEMOS: ajustes */
   .hablemos1 {
     margin-top: 30px;
+  }
+  .tituloHablemos2 {
+    text-shadow: 0 0 5px #242040;
   }
 }
 
