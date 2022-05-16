@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 @import "_sassII";
@@ -66,7 +67,7 @@ $color-texto-footer-secundario:#D1E0DF;
     background-image: $color-portada;
     animation: cambiar 5s ease infinite;
     background-size: 400% 400%;
-    position: relative;
+    width: 100%;
 }
 
 @keyframes cambiar{
@@ -81,6 +82,8 @@ $color-texto-footer-secundario:#D1E0DF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
     
     .tituloPortada{
         font-family: Arial, Helvetica, sans-serif;
@@ -92,17 +95,14 @@ $color-texto-footer-secundario:#D1E0DF;
 
     .texto1{
         font-family: Arial, Helvetica, sans-serif;
-        width: 500px;
+        
         font-size: 24px;
         text-align: justify;
-        padding: 10px 20px;
+        
         
     }
 
-    .imgVector{
-        padding: 15px 0;
-        transition: 2s;
-    }
+    
 }
 
 
@@ -541,16 +541,37 @@ label{
 @media only screen and (min-width: 320px) and (max-width: 1023px){
 
     /* -------Inicio----- */
-    .imgvector{
-        display: block;
+    .inicio{
+        
+        margin: 0;
     }
+    .tituloPortada2{
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .tituloPortada3{
+        display: block;
+        justify-content: space-evenly;
+        
+    }
+
+    
 
         /* fin inicio */
 
     /* -------sobre mi----- */
 
+    .nleft{
+        padding: 0 10px;
+        
+        
+    }
     .remote{
         width: 350px;
+        height: 350px;
+        object-fit: cover;
+        padding: 0 20px;
     }
 
     /* servicios */

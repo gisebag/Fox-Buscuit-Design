@@ -95,7 +95,7 @@
   -webkit-animation: cambiar 5s ease infinite;
           animation: cambiar 5s ease infinite;
   background-size: 400% 400%;
-  position: relative;
+  width: 100%;
 }
 
 @-webkit-keyframes cambiar {
@@ -135,6 +135,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .inicio .tituloPortada {
@@ -147,16 +149,8 @@
 
 .inicio .texto1 {
   font-family: Arial, Helvetica, sans-serif;
-  width: 500px;
   font-size: 24px;
   text-align: justify;
-  padding: 10px 20px;
-}
-
-.inicio .imgVector {
-  padding: 15px 0;
-  -webkit-transition: 2s;
-  transition: 2s;
 }
 
 /* --------------------SECCION SOBRE MI---------------- */
@@ -576,13 +570,32 @@ label {
 /* medias queries */
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   /* -------Inicio----- */
-  .imgvector {
+  .inicio {
+    margin: 0;
+  }
+  .tituloPortada2, .tituloPortada3 {
     display: block;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .tituloPortada3 {
+    display: block;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   /* fin inicio */
   /* -------sobre mi----- */
+  .nleft {
+    padding: 0 10px;
+  }
   .remote {
     width: 350px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0 20px;
   }
   /* servicios */
   .contieneServicios {
