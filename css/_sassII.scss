@@ -19,9 +19,9 @@
 //inicio mapa: page SERVICIOS//
 $pruebas:(
     //declaramos el mapa//
-    prueba1: tomato,
-    prueba2: orange,
-    prueba3: orangered
+    prueba1: #71c8af,
+    prueba2: #00989b,
+    prueba3: #005a7e
 
     );
 
@@ -51,7 +51,7 @@ $pruebas:(
 .ilust{
     
     @include pruebaMix(400px ,300px );
-    border: 5px dashed orangered;
+    border: 5px dashed #005a7e;
     text-align: center;
     margin: 10px 20px;
     border-radius: 10px;

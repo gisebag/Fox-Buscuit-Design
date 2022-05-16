@@ -19,21 +19,21 @@
 }
 
 .prueba-prueba1 {
-  background-color: tomato;
+  background-color: #71c8af;
   width: 400px;
   height: 450px;
   margin: 40px 5px;
 }
 
 .prueba-prueba2 {
-  background-color: orange;
+  background-color: #00989b;
   width: 400px;
   height: 450px;
   margin: 40px 5px;
 }
 
 .prueba-prueba3 {
-  background-color: orangered;
+  background-color: #005a7e;
   width: 400px;
   height: 450px;
   margin: 40px 5px;
@@ -42,7 +42,7 @@
 .ilust {
   height: 400px;
   width: 300px;
-  border: 5px dashed orangered;
+  border: 5px dashed #005a7e;
   text-align: center;
   margin: 10px 20px;
   border-radius: 10px;
@@ -53,12 +53,16 @@
   width: 100%;
 }
 
-.navbar {
-  background-color: coral;
+.header .navInicio {
+  background-color: none;
+}
+
+.header .navSecction {
+  background-color: #242040;
 }
 
 .navbar li a:hover {
-  background-color: orangered;
+  background-color: #54bf98;
   padding-left: 10px !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -75,18 +79,19 @@
 }
 
 .nav-link {
-  color: snow !important;
+  color: #D1E0DF !important;
 }
 
 .roll {
-  color: brown;
+  color: #54bf98;
   font-weight: bold;
+  text-shadow: 0 0 5px #242040;
 }
 
 /* ---------------------------SECCIÓN INICIO--------------------------------- */
 .body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f17e36), color-stop(#f49e6e), color-stop(#f6a38e), color-stop(#df91b4), to(#e4b8be));
-  background-image: linear-gradient(to right bottom, #f17e36, #f49e6e, #f6a38e, #df91b4, #e4b8be);
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#242040), color-stop(#1d3c61), color-stop(#005a7e), color-stop(#007991), color-stop(#00989b), color-stop(#36a8a2), color-stop(#55b8a8), color-stop(#71c8af), color-stop(#88cfbe), color-stop(#a0d5cb), color-stop(#b8dad6), to(#d1e0df));
+  background-image: linear-gradient(to left top, #242040, #1d3c61, #005a7e, #007991, #00989b, #36a8a2, #55b8a8, #71c8af, #88cfbe, #a0d5cb, #b8dad6, #d1e0df);
   -webkit-animation: cambiar 5s ease infinite;
           animation: cambiar 5s ease infinite;
   background-size: 400% 400%;
@@ -130,62 +135,58 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background-image: url(../img/portada.jpg);
-    background-size: cover; */
 }
 
-.tituloPortada {
+.inicio .tituloPortada {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   font-weight: bold;
   text-align: center;
-  text-shadow: 0 0 5px brown;
+  text-shadow: 0 0 5px #242040;
 }
 
-.tituloPortada2, .tituloPortada3 {
-  width: 500px;
-  /* background-color:rgb(33, 122, 93); */
-  padding: 10px 20px;
-  font-weight: bold;
-  text-align: justify;
-}
-
-.tituloPortada3 {
-  width: 500px;
-  /* background-color: rgb(21, 103, 57); */
-  text-align: justify;
-  padding: 10px 20px;
-}
-
-.texto1 {
+.inicio .texto1 {
   font-family: Arial, Helvetica, sans-serif;
   width: 500px;
   font-size: 24px;
-  /* background-color: rgb(131, 97, 225); */
   text-align: justify;
   padding: 10px 20px;
+}
+
+.inicio .imgVector {
+  padding: 15px 0;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /* --------------------SECCION SOBRE MI---------------- */
 /* aclaracion con titulo1: al ser una etiqueta de bloque, ajuste el ancho para poder moverla  */
 .nleft {
-  background-color: darkcyan;
-  height: 500px;
-  background-image: url(../img/diseño-grafico5.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
   margin: 15px 0;
   padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nleft .remote {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 15px 0;
+  width: 500px;
 }
 
 .nright {
-  background-color: #f0aca9;
+  background-color: #242040;
   margin: 15px 0;
   height: auto;
   padding: 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .nright:hover {
@@ -201,11 +202,6 @@
 
 .icon:hover {
   text-shadow: 0 0 5px brown;
-}
-
-.listaConocim {
-  color: orangered;
-  list-style: none;
 }
 
 .text3 {
@@ -224,12 +220,16 @@
 
 /* <!---------------------- SECCIÓN SERVICIOS-----------------------> */
 /* <!-----Usando SASS------> */
+.servicio1 {
+  background-color: #D1E0DF;
+}
+
 .tituloServicios1 {
-  margin: 20px 0 0 0;
-  color: orangered;
-  /* background-color: brown; */
+  margin: 0;
+  color: #242040;
+  text-shadow: 0 0 5px #54bf98;
   text-align: center;
-  padding: 5px;
+  padding: 25px;
 }
 
 .contieneServicios {
@@ -239,7 +239,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 70px;
+  margin-top: 40px;
   text-align: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -257,33 +257,27 @@
 
 .contieneServicios .serv .tituloCuadroServ {
   margin: 10px 0;
-  color: #333;
+  color: #D1E0DF;
   font-weight: bold;
 }
 
 .contieneServicios .serv .descripServ {
   font-size: 24px;
-  color: brown;
+  color: #D1E0DF;
+  text-shadow: 0 0 5px #242040;
   padding: 15px;
   text-align: center;
   padding-top: 60px;
 }
 
-.contieneServicios .serv .click {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  font-size: 14px;
-  padding: 2px 10px;
-  background-color: #f6a38e;
-  border-radius: 5px;
+/* <!---------------------- SECCIÓN MI PORTFOLIO-----------------------> */
+.bodyPorfolio {
+  background-color: #D1E0DF;
 }
 
-/* <!---------------------- SECCIÓN MI PORTFOLIO-----------------------> */
 .portfolio {
   width: 100%;
   height: auto;
-  background-color: #333;
   text-align: center;
 }
 
@@ -300,16 +294,16 @@
   background-image: url(../img/portadaPortfolio.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  color: brown;
-  text-shadow: 0 0 5px whitesmoke;
+  height: 200px;
 }
 
-.tituloPortfolio1 {
+.jumbotron .tituloPortfolio1 {
   height: 50px;
-  color: orangered;
-  /* border: solid 2px brown; */
+  color: #D1E0DF;
+  font-size: 50px !important;
+  font-weight: bold;
   padding: 10px 5px;
+  text-shadow: 0 0 5px #54bf98;
 }
 
 .cuadrosPortfolio {
@@ -335,7 +329,7 @@
   height: 350px;
   /* background-color: orangered; */
   font-weight: bold;
-  border: solid 2px brown;
+  border: solid 2px #54bf98;
   border-radius: 10px;
   font-size: 48px;
   padding: 10px;
@@ -376,24 +370,14 @@
 
 /* <!---------------------- SECCIÓN DISEÑO GRÁFICO-----------------------> */
 .bodyGrafico {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fcc4be), to(#fff));
-  background: linear-gradient(to top, #fcc4be, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#54bf98), to(#D1E0DF));
+  background: linear-gradient(to bottom, #54bf98, #D1E0DF);
 }
 
 .disGrafico1 {
   width: 100%;
   /* background-color: aquamarine; */
   text-align: center;
-}
-
-.tituloGrafico1 {
-  color: orangered;
-  height: 50px;
-  /* background-color: aquamarine; */
-  left: 200px;
-  /* border: solid 2px brown; */
-  padding: 5px 20px;
-  z-index: 2;
 }
 
 .cuadrosGrafico {
@@ -416,14 +400,6 @@
 }
 
 /* <!---------------------- SECCIÓN FOTOGRAFIA-----------------------> */
-.tituloFotografia1 {
-  color: orangered;
-  /* background-color: aquamarine;
-    border: solid 2px brown; */
-  text-align: center;
-  padding: 5px;
-}
-
 .cuadrosFotografia {
   display: -ms-grid;
   display: grid;
@@ -457,21 +433,20 @@
 .secHablemos {
   width: 100%;
   height: auto;
-  background-image: url(../img/fondo-contacto.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#242040), color-stop(#1d3c61), color-stop(#005a7e), color-stop(#007991), color-stop(#00989b), color-stop(#36a8a2), color-stop(#55b8a8), color-stop(#71c8af), color-stop(#88cfbe), color-stop(#a0d5cb), color-stop(#b8dad6), to(#d1e0df)), url(../img/fondo-contacto.jpg);
+  background-image: linear-gradient(to right bottom, #242040, #1d3c61, #005a7e, #007991, #00989b, #36a8a2, #55b8a8, #71c8af, #88cfbe, #a0d5cb, #b8dad6, #d1e0df), url(../img/fondo-contacto.jpg);
   background-size: cover;
   margin-bottom: 0;
 }
 
-.tituloHablemos1 {
+.tituloHablemos1, .tituloFotografia1 {
   padding: 10px 0;
-  /* background-color: aquamarine; */
   text-align: center;
-  color: orangered;
+  color: #54bf98;
 }
 
 .formulario {
-  /* background-color: #f0aca9; */
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 20px 0;
 }
 
@@ -481,14 +456,14 @@
 
 label {
   font-size: 15px;
-  color: orangered;
+  color: #242040;
   font-weight: bold;
   text-shadow: 0 0 5px whitesmoke;
 }
 
 .checkForm {
   font-size: 15px;
-  color: orangered;
+  color: #242040;
   font-weight: bold;
   text-shadow: 0 0 5px whitesmoke;
   margin-bottom: 5px;
@@ -503,13 +478,14 @@ label {
 }
 
 .clickHablemos {
-  background-color: brown;
+  background-color: #54bf98;
   color: white;
   margin: 5px 10px;
+  border: none;
 }
 
 .clickHablemos:hover {
-  background-color: #f6a38e;
+  background-color: #242040;
 }
 
 .hablemos1 {
@@ -517,22 +493,23 @@ label {
 }
 
 .tituloHablemos2 {
-  /* background-color: coral; */
-  color: brown;
+  color: #54bf98;
   padding: 10px 50px;
 }
 
-.textoHablemos1 {
-  /* background-color: coral; */
-  color: brown;
+.textoHablemos1, .tituloGrafico1 {
+  color: #D1E0DF;
   padding: 10px 50px;
 }
 
 /* --------PIE de PAGINA---------- */
 .piePagina {
   text-align: center;
-  background-color: #fff1f1;
+  background-image: url(/img/wave-haikei-footer.svg);
+  background-position: center;
+  background-size: cover;
   width: 100%;
+  height: 200px;
 }
 
 .contieneLogoChico {
@@ -540,12 +517,12 @@ label {
 }
 
 .logoPieLink {
-  color: orangered;
+  color: #D1E0DF;
   text-decoration: none;
 }
 
 .logoPieLink:hover {
-  color: orangered;
+  color: #54bf98;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -571,28 +548,28 @@ label {
 }
 
 .linea {
-  border-right: 1px solid brown;
+  border-right: 1px solid #54bf98;
 }
 
 .linkPie {
   text-decoration: none;
   padding: 10px;
-  color: brown;
+  color: #D1E0DF;
 }
 
 .logoInsta {
   font-size: 28px;
   padding: 5px;
-  color: #5e1818;
+  color: #54bf98;
   font-weight: 100;
   padding: 10px 0;
 }
 
 .copy {
-  background-color: coral;
+  background-color: #54bf98;
   text-align: center;
   padding: 5px;
-  color: #5e1818;
+  color: #242040;
   font-weight: 100;
 }
 
@@ -615,7 +592,7 @@ label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 10px 0;
+    padding: 5px 0;
   }
   .serv {
     margin: 5px 0;

@@ -9,17 +9,33 @@
 
 //* ----------------BARRA NAVEGACION----------------- *//
 
+$color-portada:linear-gradient(to left top, #242040, #1d3c61, #005a7e, #007991, #00989b, #36a8a2, #55b8a8, #71c8af, #88cfbe, #a0d5cb, #b8dad6, #d1e0df);
+$color-fondo: #D1E0DF;
+$color-nav:#242040;
+$color-footer:#242040;
+$color-texto-nav:#54bf98;
+$color-texto-footer:#54bf98;
+$color-texto-footer-secundario:#D1E0DF;
+
+
 .header{
     margin: auto !important;
     width: 100%;
+    
+    .navInicio{
+        background-color: none;
+    }
+    .navSecction{
+        background-color:$color-nav ;
+    }
 }
 
-.navbar{
-    background-color: coral;
-}
+
+
+
 
 .navbar li a:hover{
-    background-color: orangered;
+    background-color: $color-texto-nav;
     padding-left: 10px !important;
     transition: 0.5s;
 }
@@ -34,11 +50,12 @@
 }
 
 .nav-link{
-    color: snow !important;
+    color: $color-fondo !important;
 }
 .roll{
-    color: brown;
+    color: $color-texto-nav;
     font-weight: bold;
+    text-shadow: 0 0 5px $color-nav;
 
 }
 
@@ -46,7 +63,7 @@
 
 /* ---------------------------SECCIÓN INICIO--------------------------------- */
 .body{
-    background-image: linear-gradient(to right bottom, #f17e36, #f49e6e, #f6a38e, #df91b4, #e4b8be);
+    background-image: $color-portada;
     animation: cambiar 5s ease infinite;
     background-size: 400% 400%;
     position: relative;
@@ -64,70 +81,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url(../img/portada.jpg);
-    background-size: cover; */
+    
+    .tituloPortada{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0 5px $color-nav;
+    }
+
+    .texto1{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        font-size: 24px;
+        text-align: justify;
+        padding: 10px 20px;
+        
+    }
+
+    .imgVector{
+        padding: 15px 0;
+        transition: 2s;
+    }
 }
 
 
-.tituloPortada{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 0 0 5px brown;
 
-}
 
-.tituloPortada2{
-    width: 500px;
-    /* background-color:rgb(33, 122, 93); */
-    padding: 10px 20px;
-    font-weight: bold;
-    text-align: justify;
-}
 
-.tituloPortada3{
-    width: 500px;
-    /* background-color: rgb(21, 103, 57); */
-    text-align: justify;
-    padding: 10px 20px;
-}
 
-.texto1{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 500px;
-    font-size: 24px;
-    /* background-color: rgb(131, 97, 225); */
-    text-align: justify;
-    padding: 10px 20px;
 
-}
 
 /* --------------------SECCION SOBRE MI---------------- */
 
 /* aclaracion con titulo1: al ser una etiqueta de bloque, ajuste el ancho para poder moverla  */
 
 
+
+
 .nleft{
-    background-color: darkcyan;
-    height: 500px;
-    background-image: url(../img/diseño-grafico5.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
+    display: flex;
+    border-radius: 25px;
     margin: 15px 0;
     padding: 10px;
+    justify-content: center;
+
+    .remote{
+        object-fit: cover;
+        padding: 15px 0;
+        width: 500px;
+    }
+
 }
 
+
 .nright{
-    background-color:#f0aca9;
+    background-color:$color-footer;
     margin: 15px 0;
     height: auto;
     padding: 10px;
     text-align: center;
-    border-radius: 5px;
-
-
+    border-radius: 25px;
 
 }
 
@@ -146,11 +160,6 @@
     text-shadow: 0 0 5px brown;
 }
 
-.listaConocim{
-    color: orangered;
-    list-style: none;
-
-}
 
 
 .text3{
@@ -174,22 +183,22 @@
 
 /* <!-----Usando SASS------> */
 
-$color1:orangered;
-$color2:brown;
-$color3:#333;
+.servicio1{
+    background-color: $color-fondo;
+}
 
 .tituloServicios1{
-    margin: 20px 0 0 0;
-    color: $color1 ;
-    /* background-color: brown; */
+    margin: 0;
+    color: $color-nav ;
+    text-shadow: 0 0 5px $color-texto-nav;
     text-align: center;
-    padding: 5px;
+    padding: 25px;
 }
 
 .contieneServicios{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
     flex-direction: row;
 
@@ -202,27 +211,22 @@ $color3:#333;
         
         .tituloCuadroServ{
             margin: 10px 0;
-            color: $color3;
+            color: $color-fondo;
             font-weight: bold;
+            
         }
         
 
         .descripServ{
             font-size: 24px;
-            color: $color2;
+            color: $color-fondo;
+            text-shadow: 0 0 5px $color-nav;
             padding:  15px;
             text-align: center;
             padding-top: 60px;
         }
 
-        .click{
-            justify-content: end;
-            font-size: 14px;
-            padding: 2px 10px;
-            background-color: #f6a38e;
-            border-radius: 5px;
-            
-        }
+        
     }
 
 }
@@ -232,10 +236,12 @@ $color3:#333;
 
 /* <!---------------------- SECCIÓN MI PORTFOLIO-----------------------> */
 
+.bodyPorfolio{
+    background-color: $color-fondo;
+}
 .portfolio{
     width: 100%;
     height: auto;
-    background-color: #333;
     text-align: center;
 }
 .jumbotron{
@@ -245,18 +251,18 @@ $color3:#333;
     background-image: url(../img/portadaPortfolio.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    color: brown;
-    text-shadow: 0 0 5px whitesmoke;
+    height: 200px;
+    .tituloPortfolio1{
+        height: 50px;
+        color: $color-fondo;
+        font-size: 50px !important;
+        font-weight: bold;
+        padding: 10px 5px;
+        text-shadow: 0 0 5px $color-texto-nav;
+    }
+    
 
 }   
-.tituloPortfolio1{
-    height: 50px;
-    color: orangered;
-    /* border: solid 2px brown; */
-    padding: 10px 5px;
-    
-}
 
 .cuadrosPortfolio{
     display: flex;
@@ -271,7 +277,7 @@ $color3:#333;
     height: 350px;
     /* background-color: orangered; */
     font-weight: bold;
-    border: solid 2px brown;
+    border: solid 2px $color-texto-nav;
     border-radius: 10px;
     font-size: 48px;
     padding: 10px;
@@ -310,7 +316,7 @@ $color3:#333;
 /* <!---------------------- SECCIÓN DISEÑO GRÁFICO-----------------------> */
 
 .bodyGrafico{
-    background: linear-gradient(to top, rgb(252, 196, 190), #fff)
+    background: linear-gradient(to bottom, $color-texto-nav,$color-fondo)
 }
 
 .disGrafico1{
@@ -321,14 +327,7 @@ $color3:#333;
 }
 
 .tituloGrafico1{
-    color: orangered;
-    height: 50px;
-    /* background-color: aquamarine; */
-    left: 200px;
-    /* border: solid 2px brown; */
-
-    padding: 5px 20px;
-    z-index: 2;
+    @extend .textoHablemos1
 }
 
 
@@ -351,11 +350,7 @@ $color3:#333;
 /* <!---------------------- SECCIÓN FOTOGRAFIA-----------------------> */
 
 .tituloFotografia1{
-    color: orangered;
-    /* background-color: aquamarine;
-    border: solid 2px brown; */
-    text-align: center;
-    padding: 5px;
+    @extend .tituloHablemos1
     
 }
 
@@ -393,7 +388,7 @@ $color3:#333;
 .secHablemos{
     width: 100%;
     height: auto;
-    background-image: url(../img/fondo-contacto.jpg);
+    background-image: linear-gradient(to right bottom, #242040, #1d3c61, #005a7e, #007991, #00989b, #36a8a2, #55b8a8, #71c8af, #88cfbe, #a0d5cb, #b8dad6, #d1e0df), url(../img/fondo-contacto.jpg);
     background-size: cover;
     margin-bottom: 0;
 
@@ -401,15 +396,14 @@ $color3:#333;
 
 .tituloHablemos1{
     padding: 10px 0;
-    /* background-color: aquamarine; */
     text-align: center;
-    color: orangered;
+    color:$color-texto-footer;
 
 }
 
 .formulario{
-    /* background-color: #f0aca9; */
-    border-radius: 5px;
+    
+    border-radius: 15px;
     margin: 20px 0;
 
 }
@@ -417,12 +411,14 @@ $color3:#333;
 
 .contorno{
     padding: 10px 5px;
+    
+    
 }
 
 
 label{
     font-size: 15px;
-    color:orangered;
+    color:$color-nav;
     font-weight: bold;
     text-shadow: 0 0 5px whitesmoke;
 
@@ -430,7 +426,7 @@ label{
 
 .checkForm{
     font-size: 15px;
-    color:orangered;
+    color:$color-nav;
     font-weight: bold;
     text-shadow: 0 0 5px whitesmoke;
     margin-bottom: 5px;
@@ -444,14 +440,15 @@ label{
 }
 
 .clickHablemos{
-    background-color:brown;
+    background-color:$color-texto-nav;
     color: white;
     margin: 5px 10px;
+    border: none;
 
 }
 
 .clickHablemos:hover{
-    background-color: #f6a38e;
+    background-color: $color-nav;
 }
 
 .hablemos1{
@@ -459,14 +456,14 @@ label{
 }
 
 .tituloHablemos2{
-    /* background-color: coral; */
-    color: brown;
+    
+    color: $color-texto-nav;
     padding: 10px 50px;
 
 }
 .textoHablemos1{
-    /* background-color: coral; */
-    color: brown;
+    
+    color: $color-fondo;
     padding: 10px 50px;
 }
 
@@ -474,9 +471,11 @@ label{
 
 .piePagina{
     text-align: center;
-    background-color:rgb(255, 241, 241);
-
+    background-image: url(/img/wave-haikei-footer.svg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
+    height: 200px;
 }
 
 .contieneLogoChico{
@@ -484,12 +483,12 @@ label{
 }
 
 .logoPieLink{
-    color: orangered;
+    color: $color-texto-footer-secundario;
     text-decoration: none;
 }
 
 .logoPieLink:hover{
-    color: orangered;
+    color: $color-texto-footer;
 
     transition: 0.5s;
 }
@@ -508,13 +507,13 @@ label{
 }
 
 .linea{
-    border-right: 1px solid brown;
+    border-right: 1px solid $color-texto-footer;
 }
 
 .linkPie{
     text-decoration: none ;
     padding: 10px;
-    color: brown;
+    color: $color-texto-footer-secundario;
 }
 
 
@@ -522,17 +521,17 @@ label{
 .logoInsta{
     font-size: 28px;
     padding: 5px;
-    color: rgb(94, 24, 24);
+    color: $color-texto-footer;
     font-weight:100;
     padding: 10px 0;
 }
 
 
 .copy{
-    background-color: coral;
+    background-color:$color-texto-footer;
     text-align: center;
     padding: 5px;
-    color: rgb(94, 24, 24);
+    color: $color-footer;
     font-weight:100;
 }
 
@@ -552,7 +551,7 @@ label{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 10px 0;
+        padding:  5px 0;
 
     }
 
