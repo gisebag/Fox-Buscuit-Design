@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gb - mi portfolio</title>
+    <title>Fox - Galeria</title>
     <link rel="shortcut icon" href="../img/favicon.png">
 
     <!-- CSS bootstrap (se pone antes del link de css que vincula a las paginas entre sí) -->
@@ -16,6 +16,7 @@
 
     <!-- link wow / animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../wow/wow.min.js">
 
     
     <meta name="keywords" content="diseño grafico, diseño web, diseño, paginas web, design, developer, desarollador">
@@ -37,19 +38,19 @@
 
         <nav class="navbar navSecction navbar-expand-lg navbar-dark container-fluid">
 
-            <div class="container-fluid">
+            <div class="container">
             <a class="navbar-brand" href="../index.html">Fox <span class="roll">Biscuit</span> Design</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="collapse navbar-collapse cambioPosicion" id="collapsibleNavbar">
-                <ul class=" navbar-nav">
+                        <div class="collapse navbar-collapse cambioPosicion" id="collapsibleNavbar">
+                            <ul class=" navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobreMi.html">Sobre Mi</a>
+                            <a class="nav-link" href="sobreMi.html">Sobre Fox</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="servicios.html">Servicios</a>
@@ -71,19 +72,34 @@
 
 <section class="portfolio">
     <div class="jumbotron wow animate__animated animate__fadeIn">
-        <h2 class="tituloPortfolio1 animate__animated animate__fadeIn">Galería</h2>
+        <h2 class="tituloPortfolio1 animate__animated animate__fadeIn" id="galeria">Trabajos realizados</h2>
         
     </div>
 
-    
-    <section class="cuadrosPortfolio">
-        <div class="item item1 wow animate__animated animate__zoomIn"><p class="tituloCuadro"><a class="clickItem" href="disenoGrafico.html">Diseño Gráfico</a></p></div>
-        <div class="item item2 wow animate__animated animate__slideInLeft"><p class="tituloCuadro"><a class="clickItem" href="fotografia.html">Fotografía</a></p></div>
-        <div class="item item3 wow animate__animated animate__slideInRight"><p class="tituloCuadro"><a class="clickItem" href="disenoWeb.html">Diseño Web</a></p></div>
-    </section>
-
-
 </section>
+
+<section class="cuadrosPortfolio">
+    <div class="imagFoto foto3 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/mockup3.jpg" alt="marca actitud"></div>
+    <div class="imagFoto foto3 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/mockup2.jpg" alt="marca actitud II"></div>
+    <div class="imagDis dis1 animate__animated animate__fadeIn"><img class="ilust shadow p-3 mb-5 bg" src="../img/diseño-grafico1.jpg" alt="jungla"></div>
+    <div class="imagDis dis2 animate__animated animate__fadeIn"><img class="ilust shadow p-3 mb-5 bg" src="../img/diseño-grafico2.jpg" alt="retrato digital"></div>
+    <div class="imagFoto foto1 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/mockup-pag web.jpg" alt="mockup-pag"></div>
+    <div class="imagFoto foto2 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/mockup1.jpg" alt="marca personal"></div>
+    <div class="imagFoto foto3 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/mockup-pag web2.jpg" alt="mockup-pag2"></div>
+    <div class="imagDis dis4 animate__animated animate__fadeIn"><img class="ilust shadow p-3 mb-5 bg" src="../img/diseño-grafico6.jpg" alt="moto"></div>
+    <div class="imagDis dis4 animate__animated animate__fadeIn"><img class="ilust shadow p-3 mb-5 bg" src="../img/diseño-grafico4.png" alt="jinx"></div>
+    <div class="imagFoto foto3 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/diseño-grafico5.jpg" alt="tokio"></div>
+    <div class="imagFoto foto3 animate__animated animate__fadeIn"><img class="fotis1 shadow p-3 mb-5 bg" src="../img/diseño-grafico7.jpg" alt="retoque"></div>
+    <div class="imagDis dis3 animate__animated animate__fadeIn"><img class="ilust shadow p-3 mb-5 bg" src="../img/diseño-grafico3.png" alt="tulipanes"></div>
+
+    
+</section>
+
+<Section class="subir">
+    
+    <a class="masInfo" href="#galeria"><input class="clickHablemos btn btn-primary" type="button" value="Subir"></a>
+    
+</Section>
 
 
 <!-- /* -----------------PIE de PAGINA------------------- */ -->

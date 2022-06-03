@@ -19,21 +19,21 @@
 }
 
 .prueba-prueba1 {
-  background-color: #71c8af;
+  background-color: rgba(255, 255, 255, 0.15);
   width: 400px;
   height: 450px;
   margin: 40px 5px;
 }
 
 .prueba-prueba2 {
-  background-color: #00989b;
+  background-color: rgba(255, 255, 254, 0.15);
   width: 400px;
   height: 450px;
   margin: 40px 5px;
 }
 
 .prueba-prueba3 {
-  background-color: #005a7e;
+  background-color: rgba(255, 255, 253, 0.15);
   width: 400px;
   height: 450px;
   margin: 40px 5px;
@@ -42,7 +42,6 @@
 .ilust {
   height: 400px;
   width: 300px;
-  border: 5px dashed #005a7e;
   text-align: center;
   margin: 10px 20px;
   border-radius: 10px;
@@ -139,7 +138,7 @@
   padding: 0;
 }
 
-.inicio .tituloPortada {
+.inicio .tituloPortada, .inicio .texto1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   font-weight: bold;
@@ -151,55 +150,53 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   text-align: justify;
+  margin: 0 20px;
+}
+
+.imgVector {
+  padding: 10px 0;
 }
 
 /* --------------------SECCION SOBRE MI---------------- */
-/* aclaracion con titulo1: al ser una etiqueta de bloque, ajuste el ancho para poder moverla  */
-.nleft {
+.fondoRow {
+  margin: 0;
+}
+
+.fondoRow .nleft {
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 25px;
-  margin: 15px 0;
+  margin: 15px;
   padding: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.nleft .remote {
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 15px 0;
-  width: 500px;
+.fondoRow .nleft .remote {
+  width: 100%;
 }
 
-.nright {
+.fondoRow .nright {
+  width: 500px;
   background-color: #242040;
-  margin: 15px 0;
+  margin: 15px;
   height: auto;
   padding: 10px;
-  text-align: center;
+  text-align: justify;
   border-radius: 25px;
-}
-
-.nright:hover {
-  -webkit-box-shadow: 3px 3px 5px 3px #5f6c79;
-          box-shadow: 3px 3px 5px 3px #5f6c79;
 }
 
 .icon {
   color: #D1E0DF;
   font-size: 50px;
   margin: 20px;
-}
-
-.icon:hover {
-  text-shadow: 0 0 5px #242040;
+  text-align: center;
 }
 
 .text3 {
-  /* background-color: rgba(228, 184, 190); */
   color: #54bf98;
   text-align: justify;
 }
@@ -208,14 +205,17 @@
   color: whitesmoke;
 }
 
-.result {
-  color: orangered;
-}
-
 /* <!---------------------- SECCIÓN SERVICIOS-----------------------> */
 /* <!-----Usando SASS------> */
 .servicio1 {
-  background-color: #D1E0DF;
+  background: url(../img/stacked-waves-haikei.svg);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .tituloServicios1 {
@@ -242,26 +242,29 @@
 }
 
 .contieneServicios .serv {
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   font-weight: bold;
   border-radius: 15px;
   font-size: 36px;
-  -webkit-box-shadow: 2px 2px 5px 2px #5f6c79;
-          box-shadow: 2px 2px 5px 2px #5f6c79;
 }
 
 .contieneServicios .serv .tituloCuadroServ {
-  margin: 10px 0;
-  color: #D1E0DF;
+  margin: 20px 15px;
+  color: #242040;
   font-weight: bold;
+  height: 20%;
 }
 
 .contieneServicios .serv .descripServ {
-  font-size: 24px;
+  font-size: 16px;
   color: #D1E0DF;
-  text-shadow: 0 0 5px #242040;
-  padding: 15px;
-  text-align: center;
-  padding-top: 60px;
+  padding: 0 30px;
+  text-align: justify;
+  height: 200px;
 }
 
 /* <!---------------------- SECCIÓN MI PORTFOLIO-----------------------> */
@@ -292,89 +295,20 @@
 }
 
 .jumbotron .tituloPortfolio1 {
-  height: 50px;
-  color: #D1E0DF;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #242040;
   font-size: 50px !important;
   font-weight: bold;
-  padding: 10px 5px;
+  padding: 15px;
   text-shadow: 0 0 5px #54bf98;
 }
 
-.cuadrosPortfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
-}
-
-.item {
-  width: 300px;
-  height: 350px;
-  /* background-color: orangered; */
-  font-weight: bold;
-  border: solid 2px #54bf98;
-  border-radius: 10px;
-  font-size: 48px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.item1 {
-  background-image: url(../img/caja-dis-graf.jpg);
-  background-size: cover;
-}
-
-.item2 {
-  background-image: url(../img/caja-fotografia.jpg);
-  background-size: cover;
-}
-
-.item3 {
-  background-image: url(../img/caja-dis-web.jpg);
-  background-size: cover;
-}
-
-.clickItem {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-.item:hover {
-  -webkit-box-shadow: 3px 3px 5px 3px black;
-          box-shadow: 3px 3px 5px 3px black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.tituloCuadro {
-  margin-top: 120px;
-}
-
-/* <!---------------------- SECCIÓN DISEÑO GRÁFICO-----------------------> */
-.bodyGrafico {
-  background: -webkit-gradient(linear, left top, left bottom, from(#54bf98), to(#D1E0DF));
-  background: linear-gradient(to bottom, #54bf98, #D1E0DF);
-}
-
-.disGrafico1 {
-  width: 100%;
-  /* background-color: aquamarine; */
-  text-align: center;
-}
-
-.cuadrosGrafico {
+.cuadrosPortfolio, .subir {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +327,17 @@
           align-items: center;
 }
 
-/* <!---------------------- SECCIÓN FOTOGRAFIA-----------------------> */
+.item {
+  width: 400px;
+  height: 300px;
+  font-weight: bold;
+  border: solid 2px #54bf98;
+  border-radius: 10px;
+  font-size: 48px;
+  padding: 10px;
+  margin: 10px;
+}
+
 .cuadrosFotografia {
   display: -ms-grid;
   display: grid;
@@ -407,20 +351,17 @@
 
 .imagFoto {
   height: 300px;
-  background-color: orangered;
+  margin: 15px 0;
 }
 
 .fotis1 {
   width: 450px;
   height: 300px;
+  border-radius: 10px;
 }
 
-/* <!---------------------- SECCIÓN DISEÑO WEB-----------------------> */
-.disWeb1 {
-  width: 100%;
-  height: 100vh;
-  background-color: aquamarine;
-  text-align: center;
+.subir {
+  margin: 15px;
 }
 
 /* <!---------------------- SECCIÓN HABLEMOS-----------------------> */
@@ -433,7 +374,7 @@
   margin-bottom: 0;
 }
 
-.tituloHablemos1, .tituloFotografia1 {
+.tituloHablemos1 {
   padding: 10px 0;
   text-align: center;
   color: #54bf98;
@@ -476,6 +417,7 @@ label {
   color: white;
   margin: 5px 10px;
   border: none;
+  width: 250px;
 }
 
 .clickHablemos:hover {
@@ -491,7 +433,7 @@ label {
   padding: 10px 50px;
 }
 
-.textoHablemos1, .tituloGrafico1 {
+.textoHablemos1 {
   color: #D1E0DF;
   padding: 10px 50px;
 }
@@ -563,7 +505,7 @@ label {
   background-color: #54bf98;
   text-align: center;
   padding: 5px;
-  color: #242040;
+  color: #D1E0DF;
   font-weight: 100;
 }
 
@@ -591,11 +533,12 @@ label {
     padding: 0 10px;
   }
   .remote {
+    width: 100%;
+    height: 100%;
+  }
+  .imagen {
     width: 350px;
     height: 350px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    padding: 0 20px;
   }
   /* servicios */
   .contieneServicios {
@@ -618,7 +561,7 @@ label {
     margin: 5px 0;
   }
   /* inicio PORTFOLIO */
-  .cuadrosPortfolio {
+  .cuadrosPortfolio, .subir {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -662,7 +605,7 @@ label {
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /* Ajustes: seccion inicio */
-  .tituloPortada {
+  .tituloPortada, .inicio .texto1 {
     font-size: 80px;
     font-weight: bold;
     text-align: left;
@@ -677,10 +620,11 @@ label {
     width: 300px;
     text-align: left;
   }
-  .texto1 {
+  .textoPortada {
     width: 300px;
     font-size: 20px;
     text-align: left;
+    padding: 0 20px;
   }
   /* Sección HABLEMOS: ajustes */
   .hablemos1 {

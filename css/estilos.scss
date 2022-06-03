@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
+    // border: red 2px solid;
 }
 
 @import "_sassII";
@@ -32,9 +32,6 @@ $color-texto-footer-secundario:#D1E0DF;
 }
 
 
-
-
-
 .navbar li a:hover{
     background-color: $color-texto-nav;
     padding-left: 10px !important;
@@ -59,7 +56,6 @@ $color-texto-footer-secundario:#D1E0DF;
     text-shadow: 0 0 5px $color-nav;
 
 }
-
 
 
 /* ---------------------------SECCIÓN INICIO--------------------------------- */
@@ -94,59 +90,51 @@ $color-texto-footer-secundario:#D1E0DF;
     }
 
     .texto1{
+        @extend .tituloPortada;
         font-family: Arial, Helvetica, sans-serif;
-        
         font-size: 24px;
         text-align: justify;
-        
+        margin: 0 20px;
         
     }
 
     
 }
 
-
-
-
-
+.imgVector{
+    padding: 10px 0;
+}
 
 
 
 /* --------------------SECCION SOBRE MI---------------- */
 
-/* aclaracion con titulo1: al ser una etiqueta de bloque, ajuste el ancho para poder moverla  */
 
+.fondoRow{
+    margin: 0;
 
-
-
-.nleft{
-    display: flex;
-    border-radius: 25px;
-    margin: 15px 0;
-    padding: 10px;
-    justify-content: center;
-
-    .remote{
-        object-fit: cover;
-        padding: 15px 0;
+    .nleft{
         width: 500px;
+        display: flex;
+        border-radius: 25px;
+        margin: 15px;
+        padding: 10px;
+        justify-content: center;
+    
+        .remote{
+            width: 100%;
+        }
     }
 
-}
-
-
-.nright{
-    background-color:$color-footer;
-    margin: 15px 0;
-    height: auto;
-    padding: 10px;
-    text-align: center;
-    border-radius: 25px;
-
-}
-
-.nright:hover{
-    box-shadow: 3px 3px 5px 3px rgb(95, 108, 121);
+    .nright{
+        width: 500px;
+        background-color:$color-footer;
+        margin: 15px;
+        height: auto;
+        padding: 10px;
+        text-align: justify;
+        border-radius: 25px;
+    }
 }
 
 
@@ -154,29 +142,19 @@ $color-texto-footer-secundario:#D1E0DF;
     color: $color-fondo;
     font-size: 50px;
     margin: 20px;
+    text-align: center;
 
 }
-.icon:hover{
-    text-shadow: 0 0 5px $color-nav;
-}
-
-
 
 .text3{
-
-    /* background-color: rgba(228, 184, 190); */
+    
     color: $color-texto-nav;
     text-align: justify;
-
 }
 .textoSobre{
     color: whitesmoke;
 }
 
-.result{
-    color: orangered;
-
-}
 
 
 /* <!---------------------- SECCIÓN SERVICIOS-----------------------> */
@@ -184,7 +162,11 @@ $color-texto-footer-secundario:#D1E0DF;
 /* <!-----Usando SASS------> */
 
 .servicio1{
-    background-color: $color-fondo;
+    background: url(../img/stacked-waves-haikei.svg);
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
 .tituloServicios1{
@@ -204,34 +186,36 @@ $color-texto-footer-secundario:#D1E0DF;
 
     .serv{
         
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
         font-weight: bold;
         border-radius: 15px;
         font-size: 36px;
-        box-shadow: 2px 2px 5px 2px rgb(95, 108, 121);
+        
         
         .tituloCuadroServ{
-            margin: 10px 0;
-            color: $color-fondo;
+            margin: 20px 15px;
+            color: $color-nav;
             font-weight: bold;
+            height: 20%;
             
         }
         
 
         .descripServ{
-            font-size: 24px;
+            font-size: 16px;
             color: $color-fondo;
-            text-shadow: 0 0 5px $color-nav;
-            padding:  15px;
-            text-align: center;
-            padding-top: 60px;
+            padding: 0 30px;
+            text-align: justify;
+            height: 200px;
+            
         }
 
         
     }
 
 }
-
-
 
 
 /* <!---------------------- SECCIÓN MI PORTFOLIO-----------------------> */
@@ -252,13 +236,18 @@ $color-texto-footer-secundario:#D1E0DF;
     background-size: cover;
     background-position: center;
     height: 200px;
+
     .tituloPortfolio1{
-        height: 50px;
-        color: $color-fondo;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: $color-nav;
         font-size: 50px !important;
         font-weight: bold;
-        padding: 10px 5px;
+        padding: 15px;
         text-shadow: 0 0 5px $color-texto-nav;
+        
     }
     
 
@@ -267,15 +256,14 @@ $color-texto-footer-secundario:#D1E0DF;
 .cuadrosPortfolio{
     display: flex;
     flex-direction: row;
-    text-align: center;
-    justify-content:space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
     align-items: center;
-    padding: 20px 0;
 }
 .item{
-    width: 300px;
-    height: 350px;
-    /* background-color: orangered; */
+    width: 400px;
+    height: 300px;
     font-weight: bold;
     border: solid 2px $color-texto-nav;
     border-radius: 10px;
@@ -283,76 +271,7 @@ $color-texto-footer-secundario:#D1E0DF;
     padding: 10px;
     margin: 10px;
 }
-.item1{
-    background-image: url(../img/caja-dis-graf.jpg);
-    background-size: cover;
 
-}
-
-.item2{
-    background-image: url(../img/caja-fotografia.jpg);
-    background-size: cover;
-}
-
-.item3{
-    background-image: url(../img/caja-dis-web.jpg);
-    background-size: cover;
-}
-
-.clickItem{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}
-
-.item:hover{
-    box-shadow: 3px 3px 5px 3px rgb(0, 0, 0);
-    transition: 0.5s;
-}
-.tituloCuadro{
-    margin-top: 120px;
-}
-
-/* <!---------------------- SECCIÓN DISEÑO GRÁFICO-----------------------> */
-
-.bodyGrafico{
-    background: linear-gradient(to bottom, $color-texto-nav,$color-fondo)
-}
-
-.disGrafico1{
-
-    width: 100%;
-    /* background-color: aquamarine; */
-    text-align: center;
-}
-
-.tituloGrafico1{
-    @extend .textoHablemos1
-}
-
-
-
-.cuadrosGrafico{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    align-items: center;
-}
-
-
-
-
-
-
-
-/* <!---------------------- SECCIÓN FOTOGRAFIA-----------------------> */
-
-.tituloFotografia1{
-    @extend .tituloHablemos1
-    
-}
 
 .cuadrosFotografia{
     display: grid;
@@ -364,24 +283,20 @@ $color-texto-footer-secundario:#D1E0DF;
 
 .imagFoto{
     height: 300px;
-    background-color: orangered;
-    
+    margin: 15px 0;
 }
 
 .fotis1{
     width: 450px;
     height: 300px;
+    border-radius: 10px;
 }
 
-
-/* <!---------------------- SECCIÓN DISEÑO WEB-----------------------> */
-
-.disWeb1{
-    width: 100%;
-    height: 100vh;
-    background-color: aquamarine;
-    text-align: center;
+.subir{
+    @extend .cuadrosPortfolio;
+    margin: 15px;
 }
+
 
 /* <!---------------------- SECCIÓN HABLEMOS-----------------------> */
 
@@ -444,11 +359,13 @@ label{
     color: white;
     margin: 5px 10px;
     border: none;
-
+    width: 250px;
+    
 }
 
 .clickHablemos:hover{
     background-color: $color-nav;
+    
 }
 
 .hablemos1{
@@ -531,7 +448,7 @@ label{
     background-color:$color-texto-footer;
     text-align: center;
     padding: 5px;
-    color: $color-footer;
+    color: $color-texto-footer-secundario;
     font-weight:100;
 }
 
@@ -568,10 +485,16 @@ label{
         
     }
     .remote{
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+        
+    }
+
+    .imagen{
         width: 350px;
         height: 350px;
-        object-fit: cover;
-        padding: 0 20px;
+        
     }
 
     /* servicios */
@@ -653,10 +576,11 @@ label{
         text-align: left;
     }
 
-    .texto1{
+    .textoPortada{
         width: 300px;
         font-size: 20px;
         text-align: left;
+        padding: 0 20px;
     }
 
 
