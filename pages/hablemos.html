@@ -83,7 +83,7 @@
             <section class="container col-sm-6 hablemos1 animate__animated animate__fadeInTopLeft">
                 
                 <div class="cuadroColorHablemos1"></div>
-                <h3 class="tituloHablemos2">Si tenés un proyecto y querés que lo veamos juntos escribime!</h3>
+                <h3 class="tituloHablemos2">Si tenés un proyecto y querés que lo veamos juntos ¡escribime!</h3>
             
                 <h4 class="textoHablemos1">Completá el siguiente formulario y a la brevedad me pondré en contacto.</h4> 
             </section>
@@ -92,15 +92,15 @@
             <!-- formulario -->
             <section class="container col-sm-6 formulario animate__animated animate__fadeInBottomRight">
     
-                <div class="col-12 contorno">
+                <form class="col-12 contorno" action="correo.php" method="post">
                     <div class="mb-3">
                         <label for="Nombre y apellido" class="form-label">Nombre* </label>
-                        <input type="text" class="form-control" placeholder="Escribe tu Nombre">
+                        <input type="text" class="form-control" placeholder="Escribe tu Nombre" required>
                     </div>
                 
                     <div class="mb-3">
                         <label for="Nombre y apellido" class="form-label">Apellido* </label>
-                        <input type="text" class="form-control" placeholder="Escribe tu Apellido">
+                        <input type="text" class="form-control" placeholder="Escribe tu Apellido" required>
                     </div>
                     
                     <!-- check del formulario -->
@@ -116,15 +116,15 @@
                 
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label correo">Correo electrónico*</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         <input class="btn btn-primary clickHablemos" type="Submit" value="Enviar">
                         <input class="btn btn-primary clickHablemos" type="Reset" value="Borrar">
                     </div>
-                </div>
+                </form>
     
             </section>
             <!-- fin formulario -->

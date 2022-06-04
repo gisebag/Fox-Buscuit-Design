@@ -39,23 +39,8 @@ $pruebas:(
 //fin mapa//
 
 
-//inicio mixin page: Diseño grafico//
-@mixin pruebaMix ($alto, $ancho) {
-    
-    height: $alto;
-    width: $ancho;
-    
-}
+//inicio mixin page: galeria//
 
-
-.ilust{
-    
-    @include pruebaMix(400px ,300px );
-    
-    text-align: center;
-    margin: 10px 20px;
-    border-radius: 10px;
-}
 //fin mixin//
 
 
