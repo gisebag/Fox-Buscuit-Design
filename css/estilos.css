@@ -515,6 +515,16 @@ label {
     width: 350px;
     height: 350px;
   }
+  .arriba {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .abajo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   /* servicios */
   .contieneServicios {
     display: -webkit-box;
